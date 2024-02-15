@@ -1,0 +1,195 @@
+/*It's a bit messy. Some stuff definitely will need revisions*/
+
+:root
+{
+    --header: #191922
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+
+}
+
+.header {
+    position: relative;
+    overflow: clip;
+
+    background-color: var(--header);
+
+    width: 100%;
+    height: 100px;
+
+
+    margin-top: -2.5em;
+
+}
+
+.address {
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+    position: absolute;
+    left: 3%;
+    top: 30px;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 2%;
+    top: 25px;
+}
+
+.name {
+    color: #fff;
+
+    position: relative;
+    text-align: right;
+
+    font-size: 2.5vmin;
+    font-style: italic;
+
+}
+
+.img-list {
+    position: absolute;
+    z-index: 1;
+}
+
+.img-list > li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.img-list > li > a > img {
+    width: 25px;
+    height: 25px;
+}
+
+
+.nav-list > li {
+    display: inline-block;
+    padding: 15px;
+}
+
+.navigation {
+    background-color: var(--header);
+
+    width: 100%;
+    height: 10%;
+
+    text-align: center;
+    font-size: 25px;
+    margin-top: -25px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1;
+
+}
+
+.nav-list a:link, a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    color: #d3d3d3;
+}
+
+.pic {
+    background: linear-gradient(rgba(54, 62, 83, 0.541) 80%, rgba(135, 140, 155, 0.253)) , url(img/placeholder1.jpg);
+    background-size: cover;
+    background-position-y: 50%;
+
+    width: 100%;
+    height: 600px;
+
+    margin-top: -25px;
+    padding-top: 0px;
+}
+
+.pic::after {
+    background-color: var(--header);
+    width: 100%;
+    height: 600px;
+    opacity: 0.3;
+}
+
+.columns {
+    display: flex;
+    justify-content:space-evenly;
+    padding: 30px;
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.column-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 25px;
+    position: relative;
+}
+
+.stripe::before {
+    display: block;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    height: 50%;
+    background-color: #d3d3d3;
+    left: -3%;
+}
+
+.menu {
+    position:absolute;
+    left: 35%;
+}
+
+.title {
+    text-align: center;
+}
+
+.title::before {
+    display: block;
+    position: relative;
+    content: " ";
+    width: 60%;
+    height: 3px;
+    background-color: #d3d3d3;
+    left: 20%;
+    top: -4px;
+} 
+
+.menu-col {
+    display: flex;
+    flex: 4 0 100%;
+}
+
+.menu > .columns > .menu-col > .menu-item > ul > li {
+    list-style: none; 
+}
+
+.menu > .columns > .menu-col > .menu-item > ul > li >p {
+    display: inline;
+}
+
+
+.menu-pic {
+    height: 200px;
+    width: auto;
+    float: left;
+    margin-right: 30px;
+}
