@@ -207,7 +207,9 @@ ul.leaders {
     max-width: 20em;
     padding: 0;
     overflow-x: hidden;
-    list-style: none}
+    list-style: none;
+}
+
 ul.leaders li:before {
     float: left;
     width: 0;
@@ -216,11 +218,16 @@ ul.leaders li:before {
  ". . . . . . . . . . . . . . . . . . . . "
  ". . . . . . . . . . . . . . . . . . . . "
  ". . . . . . . . . . . . . . . . . . . . "
- ". . . . . . . . . . . . . . . . . . . . "}
+ ". . . . . . . . . . . . . . . . . . . . ";
+}
+
 ul.leaders span:first-child {
     padding-right: 0.33em;
-    background: white}
+    background: white;
+}
+
 ul.leaders span + span {
     float: right;
     padding-left: 0.33em;
-    background: white}
+    background: white;
+}
