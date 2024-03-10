@@ -153,7 +153,7 @@ body {
 
 .menu {
     position:absolute;
-    left: 35%;
+    left: 40%;
 }
 
 .title {
@@ -173,7 +173,13 @@ body {
 
 .menu-col {
     display: flex;
-    flex: 4 0 100%;
+    flex: 4 0;
+    flex-basis: content;
+    font-size: 25px;
+}
+
+.mg-r-20 {
+    margin-right: 50%;
 }
 
 .menu > .columns > .menu-col > .menu-item > ul > li {
@@ -192,3 +198,29 @@ body {
     margin-right: 30px;
     border-radius: 50%;
 }
+
+.absolute {
+    position: absolute;
+}
+
+ul.leaders {
+    max-width: 20em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ul.leaders li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "}
+ul.leaders span:first-child {
+    padding-right: 0.33em;
+    background: white}
+ul.leaders span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: white}
