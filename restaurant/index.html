@@ -1,106 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site</title> <!--Change later-->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site</title>
+    <!--Change later-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header class="header full-width">
-        <div class="address">
-            <p>931 Block Branch, <br> Changport, <br> MT 86853-4749</p> <!--Change later-->
-        </div> 
-        <div class="header-right">
-            <ul class="img-list">
-                 <li><a href="https://twitter.com/avtp_official"><img src="img/TWITTER.png" alt="twitter"></a></li>
-                 <li><a href="https://www.tumblr.com/averytallproblem"><img src="img/TUMBLR.png" alt="tumblr"></a></li>
-                 <li><a href="https://www.youtube.com/c/averytallproblem"><img src="img/yt.png" alt="youtube"></a></li>
-            </ul>
-            <div class="name"><h1>Some restaurant</h1></div> <!--Change later-->
-        </div>
+      <div class="address">
+        <p>
+          931 Block Branch, <br />
+          Changport, <br />
+          MT 86853-4749
+        </p>
+        <!--Change later-->
+      </div>
+      <div class="header-right">
+        <ul class="img-list">
+          <li>
+            <a href="https://twitter.com/avtp_official"
+              ><img src="img/TWITTER.png" alt="twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.tumblr.com/averytallproblem"
+              ><img src="img/TUMBLR.png" alt="tumblr"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/c/averytallproblem"
+              ><img src="img/yt.png" alt="youtube"
+            /></a>
+          </li>
+        </ul>
+        <div class="name"><h1>Some restaurant</h1></div>
+        <!--Change later-->
+      </div>
     </header>
     <nav class="navigation">
-        <ul class="nav-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#order">Online ordering</a></li>
-            <li><a href="#jobs">Jobs</a></li>
-        </ul>
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#order">Online ordering</a></li>
+        <li><a href="#jobs">Jobs</a></li>
+      </ul>
     </nav>
 
     <content id="home">
-        <div class="pic"></div>
+      <div class="pic"></div>
+      <div class="columns">
+        <div class="column-left">
+          <img src="img/placeholder1.jpg" alt="food" height="500px" />
+          <!--Change later-->
+        </div>
+        <main class="column-right stripe">
+          <!--Change later-->
+          <p>"Voluptate culpa irure occaecat dolore culpa fugiat."</p>
+          <p>
+            "Eu labore officia cupidatat nulla ullamco quis exercitation laborum
+            voluptate. Et id aute occaecat veniam ex anim in magna sunt nulla.
+            Aliqua Lorem qui cupidatat est. Voluptate dolore exercitation
+            deserunt anim dolore elit voluptate dolor. Laborum exercitation
+            consequat duis eiusmod elit sint."
+          </p>
+        </main>
+      </div>
+    </content>
+
+    <!--Menu section-->
+    <content id="menu">
+      <h1 class="title">Menu</h1>
+      <div>
         <div class="columns">
-            <div class="column-left">
-                <img src="img/placeholder1.jpg" alt="food" height="500px"> <!--Change later-->
+          <div class="column-left menu-col menu-col-l mg-l-10">
+            <div class="menu-item">
+              <h2>Appetizers</h2>
+              <img class="menu-pic" src="img/placeholder1.jpg" alt="img" />
+              <ul class="leaders">
+                <li><span>Acid beans</span><span>$10</span></li>
+              </ul>
             </div>
-            <main class="column-right stripe"> <!--Change later-->
-                <p>"Voluptate culpa irure occaecat dolore culpa fugiat."</p>
-                <p>"Eu labore officia cupidatat nulla ullamco quis exercitation laborum voluptate. Et id aute occaecat veniam ex anim in magna sunt nulla. Aliqua Lorem qui cupidatat est. Voluptate dolore exercitation deserunt anim dolore elit voluptate dolor. Laborum exercitation consequat duis eiusmod elit sint."</p>
-            </main>
+            <div class="menu-item">
+              <h2>Desserts</h2>
+              <img class="menu-pic" src="img/placeholder1.jpg" alt="img" />
+              <ul class="leaders">
+                <li><span>Sand</span><span>$6.19</span></li>
+                <li><span>Sundae Dessert Ramen</span><span>$3.99</span></li>
+                <li>
+                  <span>Emo’s Chocolate Egg Fried Rice</span><span>$4.89</span>
+                </li>
+                <li><span>Jollibee mascot rip off</span><span>$6.19</span></li>
+                <!--Change that to normal name-->
+              </ul>
+            </div>
+            <div class="menu-item">
+              <h2>Specials</h2>
+              <img class="menu-pic" src="img/placeholder1.jpg" alt="img" />
+              <ul class="leaders">
+                <li><span>Iced spaghetti</span><span>$20.99</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="column-right menu-col">
+            <div class="menu-item">
+              <h2>Entrees</h2>
+              <img class="menu-pic" src="img/placeholder1.jpg" alt="img" />
+              <ul class="leaders">
+                <li><span>Eda’s Lasagna Tacos</span><span>$3.89</span></li>
+                <li><span>Crispy Dib</span><span>$5.79</span></li>
+                <li>
+                  <span>Pizza-flavored pineapple chunks</span><span>$7</span>
+                </li>
+                <li>
+                  <span>Beejoy (fried giant bee with gravy)</span
+                  ><span>$11.99</span>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-item">
+              <h2>Drinks</h2>
+              <img class="menu-pic" src="img/placeholder1.jpg" alt="img" />
+              <ul class="leaders">
+                <li><span>Spicy water</span><span>$2.89</span></li>
+                <li><span>Iced Milk</span><span>$2.39</span></li>
+                <li><span>Milked ice</span><span>$2.19</span></li>
+                <li><span>Tall glass of spiders</span><span>$3.49</span></li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
+    </content>
+    <!--Menu section end-->
+
+    <content id="order">
+      <div>
+        <h1 class="title">Online ordering</h1>
+      </div>
     </content>
 
-    <content>
-        <h1 class="title" id="menu">Menu</h1>
-        <div class="menu">
-        <div class="columns absolute">
-            <div class="column-left menu-col menu-col-l mg-r-20">
-                <div class="menu-item">
-                    <h2>Appetizers</h2>
-                    <img class="menu-pic" src="img/placeholder1.jpg" alt="img">
-                    <ul class="leaders">
-                        <li><span>Acid beans</span><span>$10</span></li>
-
-                    </ul>
-                </div>
-                <div class="menu-item">
-                    <h2>Desserts</h2>
-                    <img class="menu-pic" src="img/placeholder1.jpg" alt="img">
-                    <ul class="leaders">
-                        <li><span>Sand</span><span>$6.19</span></li>
-                        <li><span>Sundae Dessert Ramen</span><span>$3.99</span></li>
-                        <li><span>Emo’s Chocolate Egg Fried Rice</span><span>$4.89</span></li>
-                        <li><span>Jollibee mascot rip off</span><span>$6.19</span></li> <!--Change that to normal name-->
-                    </ul>
-                </div>
-                <div class="menu-item">
-                    <h2>Specials</h2>
-                    <img class="menu-pic" src="img/placeholder1.jpg" alt="img">
-                     <ul class="leaders">
-                        <li><span>Iced spaghetti</span><span>$20.99</span></li>
-                    </ul>
-                </div>
-            </div>
-
-            
-            <div class="column-right menu-col">
-                <div class="menu-item">
-                    <h2>Entrees</h2>
-                    <img class="menu-pic" src="img/placeholder1.jpg" alt="img">
-                    <ul class="leaders">
-                        <li><span>Eda’s Lasagna Tacos</span><span>$3.89</span></li>
-                        <li><span>Crispy Dib</span><span>$5.79</span></li>
-                        <li><span>Pizza-flavored pineapple chunks</span><span>$7</span></li>
-                        <li><span>Beejoy (fried giant bee with gravy)</span><span>$11.99</span></li>
-                    </ul>
-                 </div>
-                 <div class="menu-item">
-                    <h2>Drinks</h2>
-                    <img class="menu-pic" src="img/placeholder1.jpg" alt="img">
-                    <ul class="leaders">
-                        <li><span>Spicy water</span><span>$2.89</span></li>
-                        <li><span>Iced Milk</span><span>$2.39</span></li>
-                        <li><span>Milked ice</span><span>$2.19</span></li>
-                        <li><span>Tall glass of spiders</span><span>$3.49</span></li>
-                    </ul>
-                 </div>
-                </div>
-            </div>
-        </div>
-    </content>
-    
     <footer></footer>
-</body>
+  </body>
 </html>

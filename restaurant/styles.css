@@ -147,7 +147,7 @@ body {
     content: " ";
     width: 3px;
     height: 50%;
-    background-color: #d3d3d3;
+    background-color: #e7812e;
     left: -3%;
 }
 
@@ -166,7 +166,7 @@ body {
     content: " ";
     width: 60%;
     height: 3px;
-    background-color: #d3d3d3;
+    background-color: #e7812e;
     left: 20%;
     top: -4px;
 } 
@@ -178,8 +178,8 @@ body {
     font-size: 25px;
 }
 
-.mg-r-20 {
-    margin-right: 50%;
+.mg-l-10 {
+    margin-left: 10%;
 }
 
 .menu > .columns > .menu-col > .menu-item > ul > li {
