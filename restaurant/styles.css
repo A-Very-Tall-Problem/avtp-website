@@ -13,6 +13,10 @@ body {
 
 }
 
+.font-size-25 {
+    font-size: 25px;
+}
+
 .header {
     position: relative;
     overflow: clip;
@@ -83,7 +87,6 @@ body {
     height: 10%;
 
     text-align: center;
-    font-size: 25px;
     margin-top: -25px;
 
     position: sticky;
@@ -130,14 +133,12 @@ body {
 .column-left {
     display: flex;
     flex-direction: column;
-    font-size: 25px;
 }
 
 .column-right {
     display: flex;
     flex-direction: column;
     width: 50%;
-    font-size: 25px;
     position: relative;
 }
 
@@ -175,7 +176,6 @@ body {
     display: flex;
     flex: 4 0;
     flex-basis: content;
-    font-size: 25px;
 }
 
 .mg-l-10 {
@@ -230,4 +230,18 @@ ul.leaders span + span {
     float: right;
     padding-left: 0.33em;
     background: white;
+}
+
+.grid-main {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: 50px;
+}
+
+.grid-start-3 {
+    grid-column-start: 3;
+}
+
+.grid-span-3 {
+    grid-column: span 3;
 }
