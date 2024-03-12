@@ -5,10 +5,11 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
 }
 
 body {
-    min-width: 320px;
+    min-width: 640px;
     margin: 0;
 
 }
@@ -127,6 +128,7 @@ body {
 .columns {
     display: flex;
     justify-content:space-evenly;
+    flex-wrap: wrap;
     padding: 30px;
 }
 
@@ -232,6 +234,7 @@ ul.leaders span + span {
     background: white;
 }
 
+
 .grid-main {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -244,4 +247,27 @@ ul.leaders span + span {
 
 .grid-span-3 {
     grid-column: span 3;
+}
+
+
+@media (max-width: 1200px) {
+    .mg-l-10 {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 640px) {
+    .mg-l-10 {
+        margin-left: -3%;
+    }
+
+    .grid-start-3 {
+        grid-column-start: 1;
+    }
+    
+    .grid-span-3 {
+        grid-column: span 5;
+    }
+    
 }
