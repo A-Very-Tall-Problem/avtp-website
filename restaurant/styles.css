@@ -9,14 +9,19 @@ html {
 }
 
 body {
-    min-width: 640px;
+    min-width: 374px;
     margin: 0;
 
 }
 
-.font-size-25 {
+.nav-font-size {
     font-size: 25px;
 }
+
+.font-size {
+    font-size: 25px;
+}
+
 
 .header {
     position: relative;
@@ -176,7 +181,6 @@ body {
 
 .menu-col {
     display: flex;
-    flex: 4 0;
     flex-basis: content;
 }
 
@@ -268,6 +272,39 @@ ul.leaders span + span {
     
     .grid-span-3 {
         grid-column: span 5;
+    }
+    
+}
+
+@media (max-width: 600px) {
+
+    .font-size {
+        font-size: 16px;
+    }
+
+    .column-right {
+        width: 100%;
+    }
+
+    
+    .stripe::before {
+        height: 100%;
+    }
+
+    .grid-main {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: normal;
+        text-align: center;
+    }
+
+    .grid-start-3 {
+        grid-column-start: 2;
+    }
+    
+    .grid-span-3 {
+        grid-column: span 3;
     }
     
 }
