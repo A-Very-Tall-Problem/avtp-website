@@ -1,15 +1,31 @@
+<!-- Hey what are you looking here for?-->
+<!-- Eh, there's nothing interesting besides some shit code. Has something broken? -->
+<!-- Like, if so, then oh well, I won't really be able to help you. -->
+<!-- Paid? I'm not actually being paid for doing this, I'm not even a web-developer. So I'm sorry if something has broken, we have what we have :( -->
+<!-- Mmmm, wait what? Am I being held as a hostage, you ask? Of course nooot, what a nonsense. We have good work conditions and we are actually happy, definitely nothing to worry about :) -->
+<!--Either way, you better to try the food instead of digging this code. It's pretty good, I swear :D-->    
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Site</title>
-    <!--Change later-->
+    <title>Site</title> <!--Change later-->
+    
+    <!--Main CSS-->
     <link rel="stylesheet" href="styles.css" />
+
+    <!--Slider css-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
   </head>
   <body>
+    <!--Header-->
     <header class="header full-width">
       <div class="address">
+        <!--Change later-->
         <p>
           931 Block Branch, <br />
           Changport, <br />
@@ -35,27 +51,28 @@
             /></a>
           </li>
         </ul>
-        <div class="name"><h1>Some restaurant</h1></div>
-        <!--Change later-->
+        <div class="name"><h1>Some restaurant</h1></div> <!--Change later-->
       </div>
     </header>
+
+    <!--Navigation-->
     <nav class="navigation nav-font-size">
       <ul class="nav-list">
         <li><a href="#home">Home</a></li>
         <li><a href="#menu">Menu</a></li>
         <li><a href="#contact">Conact us</a></li>
         <li><a href="#team">Our Team</a></li>
+        <li><a href="#reviews">Reviews</a></li>
       </ul>
     </nav>
 
     <content id="home">
       <div class="pic"></div>
-      <div class="columns">
-        <div class="column-left">
-          <img src="img/placeholder1.jpg" alt="food" height="500px" />
-          <!--Change later-->
+      <div class="flex columns section-bg p-30">
+        <div class="flex direction-column">
+          <img src="img/placeholder1.jpg" alt="food" height="500px" /> <!--Change later-->
         </div>
-        <main class="column-right font-size stripe">
+        <main class="direction-column column-position font-size stripe">
           <!--Change later-->
           <p>"Voluptate culpa irure occaecat dolore culpa fugiat."</p>
           <p>
@@ -65,16 +82,19 @@
             deserunt anim dolore elit voluptate dolor. Laborum exercitation
             consequat duis eiusmod elit sint."
           </p>
+          <!--Change later-->
         </main>
       </div>
     </content>
 
     <!--Menu section-->
-    <content id="menu">
+    <content id="menu" class="p-30">
       <h1 class="title">Menu</h1>
       <div>
-        <div class="columns">
-          <div class="column-left menu-col menu-col-l mg-l-10 font-size">
+        <div class="flex columns">
+          <!--1st column-->
+          <div class="flex direction-column menu-col menu-col-l mg-l-10 font-size">
+           
             <div class="menu-item">
               <h2>Appetizers</h2>
               <img class="menu-pic" src="img/placeholder1.jpg" alt="img" />
@@ -82,6 +102,7 @@
                 <li><span>Acid beans</span><span>$10</span></li>
               </ul>
             </div>
+
             <div class="menu-item">
               <h2>Desserts</h2>
               <img class="menu-pic" src="img/placeholder1.jpg" alt="img" />
@@ -92,9 +113,9 @@
                   <span>Emo’s Chocolate Egg Fried Rice</span><span>$4.89</span>
                 </li>
                 <li><span>Beejoy cake</span><span>$6.19</span></li>
-                <!--Change that to normal name-->
               </ul>
             </div>
+
             <div class="menu-item">
               <h2>Specials</h2>
               <img class="menu-pic" src="img/placeholder1.jpg" alt="img" />
@@ -103,8 +124,10 @@
               </ul>
             </div>
           </div>
+          <!--1st column end-->
 
-          <div class="column-right menu-col font-size">
+          <!--2nd column-->
+          <div class="direction-column column-position menu-col font-size">
             <div class="menu-item">
               <h2>Entrees</h2>
               <img class="menu-pic" src="img/placeholder1.jpg" alt="img" />
@@ -131,28 +154,121 @@
               </ul>
             </div>
           </div>
+          <!--2nd column end-->
         </div>
       </div>
     </content>
     <!--Menu section end-->
 
+    <!--Contact us section-->
     <content id="contact">
+      <div class=" section-bg p-30">
         <h1 class="title">Contact us</h1>
         <div class="grid-main">
-            <div class="grid-start-3">
+          <main class="grid-start-3 grid-span-3 font-size">
+            <p>Do you have any questions? <br> Or would you like to place your order? <br> That's the right place to do it!</p>
+            <p>Just join the server through this widget on the left and go to the *channelname* <!--Put tha channel name later--> channel</p>
+            <p>We will get in touch with you as soon as possible.</p>
+          </main>
+            <div class="grid-span-3">
              <!--Change later to the actual discord widget. 
                 Styles are already set up so you'll just need to put the widget from AVTP in this block between the comments-->  
                 <iframe src="https://discord.com/widget?&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
               <!--Change later-->
             </div>
-            <main class="grid-span-3 font-size">
-              <p>Do you have any questions? <br> Or would you like to place your order? <br> That's the right place to do it!</p>
-              <p>Just join the server through this widget on the left and go to the *channelname* <!--Put tha channel name later--> channel</p>
-              <p>We will get in touch with you as soon as possible.</p>
-            </main>
           </div>
+        </div>
+    </content>
+
+  <!--Our team section-->
+    <content id="team" class="p-30">
+      <h1 class="title">Our Team</h1>
+  <!--1st row with team members-->
+   <div class="flex justify-center m-bottom-30 ">
+
+    <div class="m-right-15">
+      <div clas="flex direction-column">
+        <img class="menu-pic" src="img/placeholder1.jpg" alt="img" />
+        <h2 class="name-center relative">Name</h2>
+        <p class="font-size font-grey job-center relative">Job</p>
+      </div>
+    </div>
+
+      <div class="m-right-15">
+      <div clas="flex direction-column">
+        <img class="menu-pic" src="img/placeholder1.jpg" alt="img" />
+        <h2 class="name-center relative">Name</h2>
+        <p class="font-size font-grey job-center relative">Job</p>
+      </div>
+    </div>
+
+      <div>
+      <div clas="flex direction-column">
+        <img class="menu-pic" src="img/placeholder1.jpg" alt="img" />
+        <h2 class="name-center relative">Name</h2>
+        <p class="font-size font-grey job-center relative">Job</p>
+      </div>
+    </div>
+
+  </div>
+   <!--1st row with team members end-->
+
+    <!--2nd row with team members-->
+    <div class="flex justify-center m-bottom-30 ">
+      <div class="m-right-15">
+      <div clas="flex direction-column">
+        <img class="menu-pic" src="img/placeholder1.jpg" alt="img" />
+        <h2 class="name-center relative">Name</h2>
+        <p class="font-size font-grey job-center relative">Job</p>
+      </div></div>
+      <div class="m-right-15">
+      <div clas="flex direction-column">
+        <img class="menu-pic" src="img/placeholder1.jpg" alt="img" />
+        <h2 class="name-center relative">Name</h2>
+        <p class="font-size font-grey job-center relative">Job</p>
+      </div></div>
+      <div>
+      <div clas="flex direction-column">
+        <img class="menu-pic" src="img/placeholder1.jpg" alt="img" />
+        <h2 class="name-center relative">Name</h2>
+        <p class="font-size font-grey job-center relative">Job</p>
+      </div></div>
+    </div>
+<!--2nd row with team members end-->
+    </content>
+
+    <!--Reviews section-->
+    <content id="reviews">
+      <div class=" section-bg p-30">
+        <h1 class="title">Customer reviews</h1>
+        <div class="slider review">
+          <main class="font-size">
+            <p class="italic">Pretty good food for affordable prices. Loved it here </p>
+            <p class="bold">- Joe Gaylord</p>
+          </main>
+          <main class="font-size">
+            <p class="irken italic">I'm not sure how close their dishes to actual Urth ones since I've never been there, but they're still delicious. I think everyone will find something they will like. You belong to the species whose nutrition depends on sugar? They have that. You're carnivorous? They have some meat too.</p>
+            <p class="irken bold">- Zet</p>
+          </main>
+          <main class="font-size">
+            <!--https://cable.ayra.ch/zalgo/-->
+            <!--https://lingojam.com/RLyehian-->
+            <p class="italic">V̴̲͕̇ü̵̥̗l̵̥̅g̴̗̭͠t̷̡̚ḿ̷͉̇n̵͙͑a̷̧̜̅̐ḫ̸̐̇ ̸̲̬̍b̵̦͎̚t̴̻̋h̵̖͕̆n̴̘̋̕k̸͇̈́ͅõ̶̟r̶̦͚͊n̴̯͕̆̋a̶̗͔̔͒h̴̙̔ ̷̥̩͑n̷͎͔͘g̶̮͕̀͝ ̶̞̲͐͑ţ̸̚h̴̘͉̉r̷̪̃o̸̯̓͐d̴̢̗̅͊ő̶̰̕g̷̙͛ͅ s̸̲̋̕ȇ̵͈͝r̵̭̀ͅv̸̦̞̍ï̵͔̳c̶̦͂ę̴̓̕.̸̤͖̊ ̴̭͆ ̵͚̈́Ỹ̸̠̋'̵̭̫̀͆ ̷͔͖̈́l̷͈͋͌l̸͇̈́̂ḻ̸͎͗l̷̘̠̆̕ ̸̨͓̔͐m̵̛̅ͅg̴̥̚e̶̬͌͝ͅp̶͚̊̏ň̴̜̋o̶̲͠g̵̹̞̊ ̸̖̤̆f̵̨̪̄͠ả̴̲͖̽m̶̦̚i̶̺̯͆l̸̮͆̊ỳ̴̖,̴̩̖̂̃ ̴̙̮͂ṟ̶̡͋͘i̵͚̿̾ủ̶̞h̷͇̘̔͝'̴̺̍e̶̯͂̾ó̵̖r̷͎̂ ̶̧͛̌l̷͉̹̅i̴̪͚̓͗k̵͚͋̈e̸̙̰̋ď̶͖̞͛ ̸̹̱̐h̸̬̑'̵̹̐ ̴͚͆̀g̸̢̿è̶ͅb̴̜̬́̓.̵̨͎͊ ̸̝̇
+              ̵̢̻́ ̵̺͂ḓ̷̈́̓ë̵͕́̽f̵̣̦̃ȋ̶͖̼̚n̶̝͔̔i̵̘͠ț̸̑͝e̷̝̋l̴̥͖͠y̴͔͒́ ̷̳̓͋e̴̮͗̊ṕ̴̰h̷̪̻͑̚ḁ̵̽í̷̹̘n̵͚̚ő̸͇ǵ̸̘ͅ ̵̢̡͛e̷̝͊p̸̟̻̊h̷̡̜̎́ȁ̴̠̫ì̶̻̪i̷̤͚̔̌</p>
+            <p class="bold"> - z̴͓͌͘h̴̤̰̏̕i̷̜̓̾o̷͙̚r̶͈̝͋i̶̪̝̓ṛ̷͂ </p>
+          </main>
+          <main class="font-size">
+            <p class="italic">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+            <p class="bold"> - Dib Membrane</p>
+          </main>
+        </div>
     </content>
 
     <footer></footer>
+
+    <!--Slider scripts-->
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
   </body>
 </html>
