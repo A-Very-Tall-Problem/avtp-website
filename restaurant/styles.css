@@ -28,6 +28,8 @@ body {
 
 }
 
+
+
 h1,
 h2,
 h3 {
@@ -61,6 +63,7 @@ h3 {
     font-weight: 700;
 }
 
+
 .m-bottom-30 {
     margin-bottom: 30px;
 }
@@ -74,11 +77,11 @@ h3 {
 }
 
 .name-center {
-    left: 18%
+    left: 9%
 }
 
 .job-center {
-    left: 30%
+    left: 28%
 }
 
 .p-30 {
