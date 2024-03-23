@@ -7,12 +7,12 @@
 }
 
 @font-face {
-  font-family: vag, sans-serif;
+  font-family: "vag", sans-serif;
   src: url(fonts/vaground.ttf);
 }
 
 @font-face {
-  font-family: irken, sans-serif;
+  font-family: "irken", sans-serif;
   src: url(fonts/Irken.ttf);
 }
 
@@ -24,7 +24,7 @@ html {
 body {
   min-width: 374px;
   margin: 0;
-  font-family: vag, sans-serif;
+  font-family: "vag", sans-serif;
   letter-spacing: 0.025em;
 }
 
@@ -52,7 +52,7 @@ h3 {
 }
 
 .irken {
-  font-family: irken, sans-serif;
+  font-family: "irken", sans-serif;
 }
 
 .italic {
