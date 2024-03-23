@@ -85,7 +85,7 @@ h3 {
 }
 
 .p-30 {
-    padding: 30px;
+    padding: 30px 10px;
 }
 
 .section-bg {
@@ -344,6 +344,11 @@ ul.leaders span + span {
 
 
 @media (max-width: 640px) {
+
+    .pic {
+        background-position-x: 45%;
+    }
+
     .mg-l-10 {
         margin-left: -3%;
     }
@@ -360,6 +365,24 @@ ul.leaders span + span {
 
 @media (max-width: 600px) {
 
+    .pic {
+        height: 400px;
+        background-position-x: 45%;
+    }
+
+    .header {
+        height: 110px;
+    }
+
+    .img-list {
+        top: 30px;
+    }
+
+    .menu-pic {
+        height: 130px;
+        margin-right: 10px;
+    }
+
     .font-size {
         font-size: 16px;
     }
@@ -368,7 +391,10 @@ ul.leaders span + span {
         width: 100%;
     }
 
-    
+    .columns {
+        padding: 21px;
+    }
+
     .stripe::before {
         height: 100%;
     }
