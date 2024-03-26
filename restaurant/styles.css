@@ -73,17 +73,19 @@ h3 {
   margin-right: 15px;
 }
 
+.m-right-30 {
+margin-right: 30px;
+}
+
+
 .relative {
   position: relative;
 }
 
-.name-center {
-  left: 9%;
+.text-center {
+  text-align: center;
 }
 
-.job-center {
-  left: 28%;
-}
 
 .pic-center {
   margin-left: auto;
@@ -216,6 +218,8 @@ a:visited {
   opacity: 0.3;
 }
 
+
+
 .columns {
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -246,6 +250,10 @@ a:visited {
   width: 3px;
   background-color: #e7812e;
   left: -3%;
+}
+
+main.stripe::before {
+  height: 50%;
 }
 
 .menu {
@@ -290,7 +298,6 @@ a:visited {
   height: 200px;
   width: auto;
   float: left;
-  margin-right: 30px;
   border-radius: 50%;
 }
 
@@ -356,6 +363,10 @@ ul.leaders span + span {
 }
 
 @media (max-width: 1200px) {
+  .header {
+    padding-bottom: 5%;
+  }
+  
   .mg-l-10 {
     margin-left: 0;
   }
@@ -391,6 +402,18 @@ ul.leaders span + span {
 
   .menu-pic {
     height: 130px;
+  }
+
+  main.stripe::before {
+    height: 95%;
+    top: 2%;
+  }
+  .m-right-30 {
+    margin-left: 10px;
+  }
+
+  .about-pic {
+    height: 160px;
     margin-right: 10px;
   }
 
