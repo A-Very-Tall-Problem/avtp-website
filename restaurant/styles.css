@@ -254,7 +254,8 @@ a:visited {
   width: 3px;
   background-color: #e7812e;
   left: -3%;
-  height: 230px;
+  height: 280px;
+  top: 5%
 }
 
 .menu {
@@ -287,6 +288,10 @@ a:visited {
   margin-left: 10%;
 }
 
+.mx-l-10 {
+  margin-left: -10%;
+}
+
 .menu > .columns > .menu-col > .menu-item > ul > li {
   list-style: none;
 }
@@ -307,7 +312,7 @@ a:visited {
 }
 
 ul.leaders {
-  max-width: 20em;
+  max-width: 25em;
   padding: 0;
   overflow-x: hidden;
   list-style: none;
@@ -363,14 +368,25 @@ ul.leaders span + span {
   top: 25px;
 }
 
+
 @media (max-width: 1200px) {
   .header {
     padding-bottom: 5%;
   }
 
+  .stripe::before {
+    height: 85%;
+    top: 5%
+  }
+
   .mg-l-10 {
     margin-left: 0;
   }
+
+  .mx-l-10 {
+    margin-left: auto
+  }
+  
 }
 
 @media (max-width: 640px) {
@@ -392,6 +408,7 @@ ul.leaders span + span {
 }
 
 @media (max-width: 600px) {
+
   .pic {
     height: 400px;
     background-position-x: 45%;
