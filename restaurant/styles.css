@@ -266,6 +266,11 @@ a:visited {
   top: 5%
 }
 
+#menu .stripe::before {
+  height: 780px;
+  left: -23%;
+}
+
 .menu {
   position: absolute;
   left: 40%;
@@ -381,6 +386,12 @@ ul.leaders span + span {
   margin-left: 13%;
 }
 
+@media (max-width: 1627px) {
+  #menu .stripe::before {
+    height: 0;
+  }
+}
+
 @media (max-width: 1200px) {
   .header {
     padding-bottom: 10%;
@@ -450,6 +461,7 @@ ul.leaders span + span {
     height: 95%;
     top: 2%;
   }
+
   .m-right-30 {
     margin-left: 10px;
   }
