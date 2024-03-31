@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  min-width: 374px;
+  min-width: 360px;
   margin: 0;
   font-family: "vag", sans-serif;
   letter-spacing: 0.025em;
@@ -423,6 +423,13 @@ ul.leaders span + span {
   
 }
 
+@media (max-width: 850px) {
+  
+  .grid-start-3 {
+    grid-column-start: 4;
+  }
+}
+
 @media (max-height: 500px) {
   .top-30 {
     top: 30px;
@@ -438,9 +445,6 @@ ul.leaders span + span {
     margin-left: -3%;
   }
 
-  .grid-start-3 {
-    grid-column-start: 1;
-  }
 
   .grid-span-3 {
     grid-column: span 5;
@@ -502,7 +506,7 @@ ul.leaders span + span {
     width: 100%;
   }
 
-  .columns {
+  #team .columns {
     padding: none;
     max-width: 30%;
     margin: auto;
