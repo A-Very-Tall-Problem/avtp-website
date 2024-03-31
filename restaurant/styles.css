@@ -217,16 +217,13 @@ a:visited {
 }
 
 .pic {
-  background: linear-gradient(
-      rgba(54, 62, 83, 0.205) 80%,
-      rgba(78, 81, 92, 0.253)
-    ),
-    url(img/1.jpg);
+  background-image: url(img/banner.jpg);
   background-size: cover;
   background-position-y: 50%;
+  background-position-x: 50%;
 
   width: 100%;
-  height: 600px;
+  height: 300px;
 
   margin-top: -25px;
   padding-top: none;
@@ -419,6 +416,11 @@ ul.leaders span + span {
     position: relative;
     left: 6%;
   }
+
+  .pic {
+    height: 140px;
+    background-position-x: 50%;
+  }
   
   
 }
@@ -428,6 +430,12 @@ ul.leaders span + span {
   .grid-start-3 {
     grid-column-start: 4;
   }
+
+  .pic {
+    height: 120px;
+    background-position-x: 50%;
+  }
+
 }
 
 @media (max-height: 500px) {
@@ -438,7 +446,7 @@ ul.leaders span + span {
 
 @media (max-width: 640px) {
   .pic {
-    background-position-x: 45%;
+    background-position-x: 50%;
   }
 
   .mg-l-10 {
@@ -465,8 +473,8 @@ ul.leaders span + span {
   }  
 
   .pic {
-    height: 400px;
-    background-position-x: 45%;
+    height: 100px;
+    background-position-x: 50%;
   }
 
   .header {
