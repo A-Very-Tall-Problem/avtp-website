@@ -122,6 +122,10 @@ margin-right: 30px;
   height: 100%;
 }
 
+.cooking-pic {
+  width: 700px;
+}
+
 .header {
   position: relative;
   overflow: clip;
@@ -161,7 +165,7 @@ margin-right: 30px;
   position: relative;
   text-align: right;
 
-  font-size: 2.5vmin;
+  font-size: 2.3vmin;
   font-style: italic;
 
   top: 1rem;
@@ -416,8 +420,14 @@ ul.leaders span + span {
     left: 6%;
   }
   
+  
 }
 
+@media (max-height: 500px) {
+  .top-30 {
+    top: 30px;
+  }
+}
 
 @media (max-width: 640px) {
   .pic {
@@ -440,6 +450,8 @@ ul.leaders span + span {
     position: relative;
     left: 25%;
   }
+  
+
 }
 
 @media (max-width: 600px) {
@@ -457,6 +469,7 @@ ul.leaders span + span {
     height: 110px;
     padding-bottom: 10%;
   }
+  
 
   .menu-pic {
     height: 130px;
@@ -476,6 +489,10 @@ ul.leaders span + span {
     margin-right: 10px;
   }
 
+  .cooking-pic {
+    width: 300px;
+  }
+
   .font-size {
     font-size: 16px;
   }
@@ -486,7 +503,10 @@ ul.leaders span + span {
   }
 
   .columns {
-    padding: 21px;
+    padding: none;
+    max-width: 30%;
+    margin: auto;
+  }
   }
 
   .grid-main {
@@ -519,5 +539,9 @@ ul.leaders span + span {
   .eightk {
     position: relative;
     left: 85%;
+  }
+
+  .width-50 {
+    width: 90%;
   }
 }
