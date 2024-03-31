@@ -49,6 +49,11 @@ h3 {
   font-size: 21px;
 }
 
+.note {
+  font-size: 12px;
+  font-style: italic;
+}
+
 .font-grey {
   color: var(--grey);
 }
@@ -474,7 +479,7 @@ ul.leaders span + span {
   .font-size {
     font-size: 16px;
   }
-
+  
 
   .column-position {
     width: 100%;
