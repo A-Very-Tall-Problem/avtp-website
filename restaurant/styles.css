@@ -492,6 +492,7 @@ ul.leaders span + span {
   .pic {
     height: 100px;
     background-position-x: 50%;
+    margin-top: -18px;
   }
 
   .header {
