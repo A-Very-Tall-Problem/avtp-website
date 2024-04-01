@@ -397,6 +397,11 @@ ul.leaders span + span {
   margin-left: 13%;
 }
 
+.footer {
+  height: 10px;
+  padding-bottom: 7%;
+}
+
 @media (max-width: 1627px) {
   .stripe::before {
     height: 85%;
@@ -431,7 +436,9 @@ ul.leaders span + span {
     background-position-x: 50%;
   }
   
-  
+  .footer {
+    padding-bottom: 15%;
+  }
 }
 
 @media (max-width: 850px) {
@@ -573,7 +580,8 @@ ul.leaders span + span {
   .mini {
     height: 200px;
   }
+  .footer {
+    padding-bottom: 0;
+  }
 }
-.footer {
-  height: 10px;
-}
+
