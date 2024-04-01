@@ -108,6 +108,11 @@ margin-right: 30px;
   width: 50%;
 }
 
+.mini-center {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .about-center {
   text-align: center;
   margin: 3rem;
@@ -236,6 +241,10 @@ a:visited {
   opacity: 0.3;
 }
 
+.mini {
+  height: 350px;
+}
+
 
 
 .columns {
@@ -257,7 +266,7 @@ a:visited {
 }
 
 .column-position {
-  width: 50%;
+  width: 40%;
   position: relative;
 }
 
@@ -393,6 +402,10 @@ ul.leaders span + span {
 }
 
 @media (max-width: 1627px) {
+  .stripe::before {
+    height: 85%;
+  }
+
   #menu .stripe::before {
     height: 0;
   }
@@ -404,7 +417,7 @@ ul.leaders span + span {
   }
 
   .stripe::before {
-    height: 85%;
+    height: 90%;
     top: 5%
   }
 
@@ -434,6 +447,10 @@ ul.leaders span + span {
   .pic {
     height: 120px;
     background-position-x: 50%;
+  }
+
+  .column-position {
+    width: 80%;
   }
 
 }
@@ -554,5 +571,9 @@ ul.leaders span + span {
 
   .width-50 {
     width: 90%;
+  }
+
+  .mini {
+    height: 240px;
   }
 }
