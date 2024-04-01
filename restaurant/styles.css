@@ -144,9 +144,6 @@ margin-right: 30px;
   padding-bottom: 10%;
 }
 
-.footer {
-  height: 100px;
-}
 
 .address {
   color: #fff;
@@ -576,4 +573,7 @@ ul.leaders span + span {
   .mini {
     height: 200px;
   }
+}
+.footer {
+  height: 10px;
 }
